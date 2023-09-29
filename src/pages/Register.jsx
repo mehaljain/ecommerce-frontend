@@ -1,11 +1,12 @@
 // eslint-disable-next-line
 import React, { useState } from 'react';
-import { Footer, Navbar } from "../components";
-import { Link } from 'react-router-dom';
+import { Footer } from "../components";
+import { Link,useNavigate } from 'react-router-dom';
 
 
 
 const Register = () => {
+    const navigate=useNavigate();
 
 //   const history = useHistory();
       const[ user , setUser ] = useState({
@@ -36,6 +37,15 @@ const Register = () => {
       },
       body: JSON.stringify({ fullname, email, password, confirmpassword})
     })
+    .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }else{
+            alert("user registered successfully and please login for purchasing");
+          navigate('/product');
+        }
+        return response.json();
+      })
          }
          else{
             alert('enter same password')
@@ -50,7 +60,7 @@ const Register = () => {
 
     return (
         <>
-            <Navbar />
+            
             <div className="container my-3 py-3">
                 <h1 className="text-center">Register</h1>
                 <hr />
@@ -106,7 +116,7 @@ const Register = () => {
                                 />
                             </div>
                             <div className="my-3">
-                                <p>Already has an account? <Link to="/login" className="text-decoration-underline text-info">Login</Link> </p>
+                                <p>Already has an account? <Link to="/" className="text-decoration-underline text-info">Login</Link> </p>
                             </div>
                             <div className="text-center">
                                 <button className="my-2 mx-auto btn btn-dark" type="submit">

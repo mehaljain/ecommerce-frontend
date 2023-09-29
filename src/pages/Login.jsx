@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
-import { Footer, Navbar } from "../components";
+import { Link,useNavigate } from "react-router-dom";
+import { Footer} from "../components";
 
 
  
 
 const Login = () => {
+  const navigate=useNavigate();
   const[ user , setUser ] = useState({
     email: "",
     password: "",
@@ -36,7 +37,8 @@ const Login = () => {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }else{
-        response.redirect('/Products');
+        alert("user login successfully.");
+        navigate('/product');
       }
       return response.json();
     })
@@ -53,7 +55,7 @@ const Login = () => {
 
   return (
     <>
-      <Navbar />
+      
       <div className="container my-3 py-3">
         <h1 className="text-center">Login</h1>
         <hr />

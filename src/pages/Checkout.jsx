@@ -2,6 +2,8 @@ import React from "react";
 import { Footer, Navbar } from "../components";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import './Pages.css';
+
 const Checkout = () => {
   const state = useSelector((state) => state.handleCart);
 
@@ -11,7 +13,7 @@ const Checkout = () => {
         <div className="row">
           <div className="col-md-12 py-5 bg-light text-center">
             <h4 className="p-3 display-5">Thanks for Shopping</h4>
-            <Link to="/" className="btn btn-outline-dark mx-4">
+            <Link to="/home" className="btn btn-outline-dark mx-4">
               <i className="fa fa-arrow-left"></i> Continue Shopping
             </Link>
           </div>
@@ -42,14 +44,14 @@ const Checkout = () => {
                 </div>
                 <div className="card-body">
                   <ul className="list-group list-group-flush">
-                    <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    <li className="list-group-item1 d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       Products ({totalItems})<span>Rs. {Math.round(subtotal)}</span>
                     </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center px-0">
+                    <li className="list-group-item1 d-flex justify-content-between align-items-center px-0">
                       Shipping
                       <span>Rs. {shipping}</span>
                     </li>
-                    <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                    <li className="list-group-item1 d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                       <div>
                         <strong>Total amount</strong>
                       </div>
@@ -171,6 +173,10 @@ const Checkout = () => {
                         <select className="form-select" id="state" required>
                           <option value="">Choose...</option>
                           <option>Rajasthan</option>
+                          <option>Punjab</option>
+                          <option>Haryana</option>
+                          <option>Gujarat</option>
+                          <option>Maharashtra</option>
                         </select>
                         <div className="invalid-feedback">
                           Please provide a valid state.
@@ -185,6 +191,9 @@ const Checkout = () => {
                         <select className="form-select" id="city" required>
                           <option value="">Choose...</option>
                           <option>Jaipur</option>
+                          <option>Chandigarh</option>
+                          <option>Gandhinagar</option>
+                          <option>Mumbai</option>
                         </select>
                         <div className="invalid-feedback">
                           Please provide a valid city.
@@ -206,7 +215,39 @@ const Checkout = () => {
                           Zip code required.
                         </div>
                       </div>
+                      
                     </div>
+
+                    <hr className="my-4" />
+
+                    <div className="row g-3">
+                    <h4 className="mb-3">Payment Method</h4>
+                    <div className="col-md-3 my-1"><br/>
+                        
+                        <input
+                          type="radio"
+                          id=""
+                          placeholder=""
+                          name="pay"
+                          required />
+                          <label for="zip" className="form-label">
+                           &nbsp; C-O-D 
+                        </label>
+                       
+                      </div>
+                      <div className="col-md-3 my-1"><br/>
+                        
+                        <input
+                          type="radio"
+                          id=""
+                          placeholder=""
+                          name="pay" />
+                          <label for="zip" className="form-label">
+                           &nbsp; UPI Payment
+                        </label>
+                       
+                      </div>
+                      </div>
 
                     {/* <hr className="my-4" />
 
@@ -282,12 +323,11 @@ const Checkout = () => {
                       {/* </div> */}
                     {/* </div> */}
 
-                    <hr className="my-4" />
+                    {/* <hr className="my-4" /> */}
 
                     <button
                       className="w-100 btn btn-primary "
-                      type="submit" 
-                    >
+                      type="submit"  >
                       Continue to checkout
                     </button>
                   </form>

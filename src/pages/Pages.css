@@ -1,0 +1,30 @@
+card-title {
+    padding: 15px;
+align-content: center;
+}
+card-img-top.img{
+    width: 10px;
+    height: 20px;
+}
+list-group{
+    background-color:rgb(247, 175, 175);
+}
+li.list-group1-item{
+    background-color:rgb(250, 230, 230);
+    font: bolder;
+}
+li.list-group-item1:hover{
+    background-color:rgb(247, 175, 175);
+}
+
+/* button{
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+} */
+
+btn1{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}

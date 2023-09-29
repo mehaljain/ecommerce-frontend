@@ -59,7 +59,7 @@ export default function App() {
       <div>
       
         <SimpleImageSlider
-            width={1485}
+            width={1465}
             height={680}
             images={sliderImages}
             showBullets={true}
@@ -77,6 +77,7 @@ export default function App() {
         <div className="caption-container">
   <p className="caption-text">
     {sliderImages[imageNum - 1]?.caption}
+    {/* <span className="caption-underline"></span> */}
   </p>
 </div>
         <div className="card-img-overlay d-flex align-items-center">

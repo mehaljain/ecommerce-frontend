@@ -34,6 +34,8 @@ fetch('http://localhost:3000/contacts/api/contact', {
   .then((response) => {
     if (!response.ok) {
       throw new Error('Network response was not ok');
+    }else{
+      alert("Thanks for your response........")
     }
     return response.json();
   })

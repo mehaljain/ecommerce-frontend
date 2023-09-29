@@ -1,5 +1,6 @@
 import React from "react";
 import { Footer, Navbar } from "../components";
+import "./Pages.css";
 const AboutPage = () => {
   return (
     <>
@@ -8,19 +9,20 @@ const AboutPage = () => {
         <h1 className="text-center">About Us</h1>
         <hr />
         <p className="lead text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-          facere doloremque veritatis odit similique sequi. Odit amet fuga nam
-          quam quasi facilis sed doloremque saepe sint perspiciatis explicabo
-          totam vero quas provident ipsam, veritatis nostrum velit quos
-          recusandae est mollitia esse fugit dolore laudantium. Ex vel explicabo
-          earum unde eligendi autem praesentium, doloremque distinctio nesciunt
-          porro tempore quis eaque labore voluptatibus ea necessitatibus
-          exercitationem tempora molestias. Ad consequuntur veniam sequi ullam
-          tempore vel tenetur soluta dolore sunt maxime aliquam corporis est,
-          quo saepe dolorem optio minus sint nemo totam dolorum! Reprehenderit
-          delectus expedita a alias nam recusandae illo debitis repellat libero,
-          quasi explicabo molestiae saepe, dolorem tempore itaque eveniet quam
-          dignissimos blanditiis excepturi harum numquam vel nihil? Ipsum
+          your one-stop destination for all your engineering student essentials.
+          We are passionate about simplifying the academic journey for
+          engineering students, providing access to quality educational
+          materials, and helping you excel in your studies.we understand the
+          challenges that engineering students face. Our journey began when a
+          group of engineering students came together to create a platform that
+          could make the process of acquiring books, accessories, and uniforms
+          more convenient and affordable. We have walked in your shoes, and we
+          know what it's like to balance coursework, projects, and
+          extracurricular activities.Our mission is simple: to empower
+          engineering students with the tools and resources they need to succeed
+          academically. We strive to offer a wide selection of textbooks,
+          high-quality accessories, and comfortable uniforms at competitive
+          prices, ensuring that no student is held back by financial constraints
         </p>
 
         <h2 className="text-center py-4">Our Products</h2>
@@ -34,7 +36,7 @@ const AboutPage = () => {
                 height={160}
               />
               <div className="card-body">
-                <h5 className="card-title1 text-center">Books</h5>
+                <h5 className="card-title text-center">BOOKS</h5>
               </div>
             </div>
           </div>
@@ -47,7 +49,7 @@ const AboutPage = () => {
                 height={160}
               />
               <div className="card-body">
-                <h5 className="card-title1 text-center">RTU paper</h5>
+                <h5 className="card-title text-center">RTU PAPERS</h5>
               </div>
             </div>
           </div>
@@ -60,7 +62,7 @@ const AboutPage = () => {
                 height={160}
               />
               <div className="card-body">
-                <h5 className="card-title1 text-center">Instruments</h5>
+                <h5 className="card-title text-center">ACCESSORIES</h5>
               </div>
             </div>
           </div>
@@ -73,7 +75,7 @@ const AboutPage = () => {
                 height={160}
               />
               <div className="card-body">
-                <h5 className="card-title1 text-center">Others</h5>
+                <h5 className="card-title text-center">UNIFORMS</h5>
               </div>
             </div>
           </div>

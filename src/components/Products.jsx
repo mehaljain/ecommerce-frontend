@@ -29,6 +29,7 @@ const Products = () => {
         setFilter(await response.json());
         
         setLoading(false);
+        console.log(data)
       }
 
       return () => {

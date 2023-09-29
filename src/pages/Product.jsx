@@ -8,7 +8,8 @@ import { addCart } from "../redux/action";
 import { Footer, Navbar } from "../components";
 
 const Product = () => {
-  const { id } = useParams();
+  const { id } =useParams();
+  console.log(typeof(id));
   const [product, setProduct] = useState([]);
   // const [similarProducts, setSimilarProducts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -28,6 +29,7 @@ const Product = () => {
       // setLoading2(true);
       const response = await fetch(`http://localhost:3000/products/${id}`);
       const data = await response.json();
+      // console.log(data)
       setProduct(data);
       setLoading(false);
     //   const response2 = await fetch(
@@ -36,14 +38,16 @@ const Product = () => {
     //   const data2 = await response2.json();
     //   setSimilarProducts(data2);
     //   setLoading2(false);
+     
+    // return () => {
+    //   componentMounted = false;
+    // };
+    };
+   getProduct();
+   
 
-    return () => {
-      componentMounted = false;
-    };
-    };
-    getProduct();
   }, [id]);
-
+  // console.log(product)
   const Loading = () => {
     return (
       <>
@@ -176,6 +180,7 @@ const Product = () => {
   // };
   return (
     <>
+    
       <Navbar />
       <div className="container">
         <div className="row">{loading ? <Loading /> : <ShowProduct />}</div>

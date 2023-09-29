@@ -30,7 +30,7 @@
 }
 .card-body {
   background-color: rgb(250, 230, 230);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .card-title {
   color: rgb(4, 4, 4);
@@ -45,7 +45,7 @@
 }
 
 .card-body:hover {
-  background-color: rgb(251, 146, 146);
+  background-color: rgb(247, 175, 175);
   box-shadow: 5px 5px 5px darkgrey;
   transform: scale(1.01);
 }
@@ -190,10 +190,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; /* You can adjust the height to your preference */
-}
+ } 
 
 /* Style for the caption container */
-.caption-container {
+.caption-container{
   text-align: center;
   margin-top: 20px; /* Adjust the margin as needed */
 }
@@ -218,7 +218,7 @@
   animation: underline-animation 3s infinite; /* Automatically enable the animation */
 }
 
-/* Keyframes for the underline animation */
+/* Keyframes for the underline animation */ 
 @keyframes underline-animation {
   0% {
     transform: scaleX(0);
@@ -248,3 +248,5 @@
 .handle:hover {
   cursor: pointer;
 }
+/* Caption.css */
+
