@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Footer } from "../components";
 import { Link,useNavigate } from 'react-router-dom';
+import Pages from "./Pages.css"
 
 
 
@@ -29,7 +30,7 @@ const Register = () => {
 
          if(user.password === user.confirmpassword){
             const { fullname, email, password, confirmpassword} = user;
-    fetch('http://localhost:3000/users/api/register', {
+    fetch('https://ecommerce-backend-u3vc.onrender.com/users/api/register', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json', // Set the appropriate content type

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar } from "../components";
-
+import Pages from "./Pages.css"
 const PageNotFound = () => {
   return (
     <>

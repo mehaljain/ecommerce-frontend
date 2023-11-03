@@ -44,14 +44,14 @@ const Checkout = () => {
                 </div>
                 <div className="card-body">
                   <ul className="list-group list-group-flush">
-                    <li className="list-group-item1 d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                    <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                       Products ({totalItems})<span>Rs. {Math.round(subtotal)}</span>
                     </li>
-                    <li className="list-group-item1 d-flex justify-content-between align-items-center px-0">
+                    <li className="list-group-item d-flex justify-content-between align-items-center px-0">
                       Shipping
                       <span>Rs. {shipping}</span>
                     </li>
-                    <li className="list-group-item1 d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                    <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                       <div>
                         <strong>Total amount</strong>
                       </div>

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Pages from "./Pages.css"
+
 
 function OrderList() {
   const [orders, setOrders] = useState([]);
