@@ -16,7 +16,7 @@ const Cart = () => {
           <div className="col-md-12 py-5 bg-light text-center">
             <h4 className="p-3 display-5">Your Cart is Empty</h4>
             <Link to="/home" className="btn  btn-outline-dark mx-4">
-              <i className="fa fa-arrow-left"></i> Continue Shopping
+              <i className="fa fa-arrow-left"></i> Continue<br/> Shopping
             </Link>
           </div>
         </div>
@@ -132,7 +132,7 @@ const Cart = () => {
                       <li className="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
                         Products ({totalItems})<span>Rs. {Math.round(subtotal)}</span>
                       </li>
-                      <li className="list-group-item1 d-flex justify-content-between align-items-center px-0">
+                      <li className="list-group-item d-flex justify-content-between align-items-center px-0">
                         Shipping
                         <span>Rs. {shipping}</span>
                       </li>
@@ -149,7 +149,8 @@ const Cart = () => {
                     <Link
                       to="/checkout" 
                       className="btn btn-dark btn-lg btn-block">
-                      Go to checkout
+                      Go to <br/>
+                      checkout
                     </Link>
                     
                   </div>

@@ -14,7 +14,7 @@ const Checkout = () => {
           <div className="col-md-12 py-5 bg-light text-center">
             <h4 className="p-3 display-5">Thanks for Shopping</h4>
             <Link to="/home" className="btn btn-outline-dark mx-4">
-              <i className="fa fa-arrow-left"></i> Continue Shopping
+              <i className="fa fa-arrow-left"></i> Continue <br/>Shopping
             </Link>
           </div>
         </div>
@@ -326,9 +326,9 @@ const Checkout = () => {
                     {/* <hr className="my-4" /> */}
 
                     <button
-                      className="w-100 btn btn-primary "
+                      className="w btn btn-primary "
                       type="submit"  >
-                      Continue to checkout
+                      Continue to <br/>checkout
                     </button>
                   </form>
                 </div>

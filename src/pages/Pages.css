@@ -9,11 +9,12 @@ card-img-top.img{
 list-group{
     background-color:rgb(247, 175, 175);
 }
-li.list-group1-item{
-    background-color:rgb(250, 230, 230);
+li.list-group-item{
+    background-color:rgb(255, 220, 220);
     font: bolder;
+    color: black;
 }
-li.list-group-item1:hover{
+li.list-group-item:hover{
     background-color:rgb(247, 175, 175);
 }
 
@@ -27,4 +28,8 @@ btn1{
     display: flex;
     justify-content: center;
     text-decoration: none;
+}
+
+w{
+    align-items: center;
 }
