@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col-md-6">
             {/* <p className="mb-3 mb-md-0">Made with by {" "} */}
               {/* <a  href="/home" className="text-decoration-underline text-dark fs-5" target="_blank" rel="noreferrer">Nikhil, Tarun and Nishant</a> */}
-            </p>
+            {/* </p> */}
             {/* <a className="text-dark fs-4" href="/" target="_blank" rel="noreferrer">
               <i className="fa fa-github"></i>
             </a> */}
